@@ -1,0 +1,48 @@
+@font-face {
+	font-family: Karla;
+	src: url(karla.extrabold.ttf);
+}
+
+* {
+	margin: 0 auto;
+}
+
+body {
+	background-color: #273549;
+}
+
+h2 {
+	color: #fff;
+	font-family: Karla, sans-serif;
+	font-size: 40px;
+}
+
+.green-text {
+	color:  #10B981;
+}
+
+p {
+	color: #D5D4D8;
+	font-family: Inter, sans-serif;
+	font-size: 20px;
+	font-weight: 300;
+	margin-top: 15px;
+}
+
+button {
+	color: #fff;
+	background-color: #10B981;
+	border: none;
+	border-radius: 6px;
+	padding:  10px 15px 10px 15px;
+	font-size: 16px;
+	font-weight: 400;
+	margin-top: 50px;
+	cursor: pointer;
+}
+
+.container {
+	width: 50%;
+	margin-left: 25%;
+	margin-top: 10%;
+}

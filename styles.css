@@ -46,3 +46,34 @@ button {
 	margin-left: 25%;
 	margin-top: 10%;
 }
+
+hr {
+	margin:  40px 0 40px 0;
+	border: 1px solid #2F3E53;
+}
+
+.passwords-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.password-display {
+	width: 320px;
+	height: 50px;
+	background-color: #2F3E53;
+	margin-right: 10px;
+	border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

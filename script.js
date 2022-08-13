@@ -6,6 +6,10 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 // each password should be 15 characters long
 
 
+function generatePassword() {
+	console.log("clicked")
+}
+
 
 // stretch goals
 

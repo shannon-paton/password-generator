@@ -52,19 +52,49 @@ hr {
 	border: 1px solid #2F3E53;
 }
 
+
+/* need to fix all this */
+
 .passwords-container {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	display: flex;
+	justify-content: center;
 }
 
-.password-display {
-	width: 320px;
+.password-field {
+	width: 250px;
 	height: 50px;
 	background-color: #2F3E53;
-	margin-right: 10px;
 	border-radius: 5px;
+	border-style: none;
+	padding: 2px;
+	outline: none;
+	font-family: Inter;
+	font-size: 16px;
+	line-height: 32px;
+	color: #55F991;
+	text-align: center;
 }
 
+#pass-1 {
+	margin-right: 5px;
+}
+
+#pass-1 {
+	margin-left: 5px;
+}
+
+@media screen only and (max-width: 800px) {
+	.passwords-container {
+		flex-direction: column;
+		flex: 2;
+	}
+	.password-display: {
+		width: 500px;
+	}
+}
+
+
+/**/
 
 
 

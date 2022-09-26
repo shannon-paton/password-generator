@@ -7,7 +7,22 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 
 
 function generatePassword() {
-	console.log("clicked")
+
+	let password1 = []
+
+	// get 16 random characters and add to array
+
+	// turn array into a string, and return within the field
+
+
+	// button clicked
+
+	// generate random string of 16 characters
+
+	// for both field 1 and field 2
+
+
+
 }
 
 

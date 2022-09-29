@@ -80,7 +80,12 @@ hr {
 }
 
 
-/**/
+@media screen only and (max-width: 800px) {
+	.passwords-field {
+		flex-direction: row;
+
+	}
+}
 
 
 

@@ -43,7 +43,7 @@ button {
 
 .container {
 	width: 50%;
-	margin-left: 25%;
+	margin-left: 125px;
 	margin-top: 10%;
 }
 
@@ -80,11 +80,21 @@ hr {
 }
 
 
-@media screen only and (max-width: 800px) {
-	.passwords-field {
-		flex-direction: row;
-
+@media only screen and (max-width: 625px) {
+	.container {
+		margin-left: 15px;
 	}
+	hr {
+		width: 350px;
+	}
+	.passwords-container {
+		display: block;
+	}
+	.password-field {
+		width: 350px;
+		margin-bottom: 10px;
+	}
+
 }
 
 

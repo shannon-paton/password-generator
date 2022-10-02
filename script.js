@@ -12,7 +12,7 @@ function generatePassword() {
 	const password2 = document.getElementById('pass2')
 
 	let randomPassword1 = ""
-	for (let i = 0; i < 16; i++) {
+	for (let i = 0; i < 15; i++) {
 		let randomElement = characters[Math.floor(Math.random() * characters.length)];
   		randomPassword1 += randomElement;
 	}
@@ -20,7 +20,7 @@ function generatePassword() {
 
 
 	let randomPassword2 = ""
-	for (let i=0; i < 16; i++) {
+	for (let i=0; i < 15; i++) {
 		let randomElement = characters[Math.floor(Math.random() * characters.length)];
 		randomPassword2 += randomElement;
 	}

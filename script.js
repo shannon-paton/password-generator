@@ -6,9 +6,14 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 // each password should be 15 characters long
 
 
+
 function generatePassword() {
 
 	let password1 = []
+
+
+	const randomElement = characters[Math.floor(Math.random() * characters.length)];
+	console.log(randomElement)
 
 	// get 16 random characters and add to array
 

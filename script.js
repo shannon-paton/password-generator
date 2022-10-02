@@ -29,21 +29,20 @@ const copyButton2 = document.getElementById('copy-button-2')
 
 function copyPassword(password) {
 
-	// Get the text field
-	let copyText = password.innerText
-
-	 // Select the text field
-	copyText.select(); // selecting copied text
-	copyText.setSelectionRange(0, 99999); // For mobile devices
-
-	// Copy the text inside the text field
-  	navigator.clipboard.writeText(copyText.value);
-
-  	// Alert the copied text
-  	alert("Copied the text: " + copyText.value);
-
+	let text = password.innerText;
+	const el = document.createElement('textarea'); // creating a textarea
+	el.value = text; // setting value of text area to the password innerText
+	el.setAttribute('readonly', '')
+  	el.style.position = 'absolute'
+  	el.style.left = '-9999px'
+  	document.body.appendChild(el)
+  	el.select()
+  	document.execCommand('copy')
+  	document.body.removeChild(el)
+  	alert("Copied the text: " + text);
 
 	// https://www.w3schools.com/howto/howto_js_copy_clipboard.asp
+	// https://inspiredwebdev.com/copy-to-clipboard-with-javascript/ used this method since it wasn't created as a textarea
 
 }
 

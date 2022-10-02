@@ -15,22 +15,22 @@ function generatePassword() {
 		let randomElement = characters[Math.floor(Math.random() * characters.length)]; // 
   		randomPassword1 += randomElement;
 	}
-	console.log(randomPassword1)
 	password1.innerText = randomPassword1
-	console.log(password1.innerText.length)
 
 	let randomPassword2 = ""
 	for (let i=0; i < 15; i++) {
 		let randomElement = characters[Math.floor(Math.random() * characters.length)];
 		randomPassword2 += randomElement;
 	}
-	console.log(randomPassword2)
 	password2.innerText = randomPassword2.toString()
-	console.log(password2.innerText.length)
 }
 
 function copyPassword() {
-	
+	const copyButton1 = document.getElementById('copy-button-1')
+	const copyButton2 = document.getElementById('copy-button-2')
+
+
+
 }
 
 

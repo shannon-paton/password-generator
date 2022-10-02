@@ -29,6 +29,10 @@ function generatePassword() {
 	console.log(password2.innerText.length)
 }
 
+function copyPassword() {
+	
+}
+
 
 // stretch goals
 

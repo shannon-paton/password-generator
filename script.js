@@ -15,7 +15,7 @@ function generatePassword() {
 		let randomElement = characters[Math.floor(Math.random() * characters.length)]; // 
   		randomPassword1 += randomElement;
 	}
-	password1.innerText = randomPassword1
+	password1.innerText = randomPassword1.toString()
 
 	let randomPassword2 = ""
 	for (let i=0; i < 15; i++) {
@@ -28,6 +28,8 @@ function generatePassword() {
 function copyPassword() {
 	const copyButton1 = document.getElementById('copy-button-1')
 	const copyButton2 = document.getElementById('copy-button-2')
+
+
 
 
 

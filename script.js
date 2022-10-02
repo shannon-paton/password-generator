@@ -2,7 +2,6 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 "/"];
 
 // generate two random passwords when user clicks the button
-
 // each password should be 15 characters long
 
 
@@ -11,12 +10,14 @@ function generatePassword() {
 	const password1 = document.getElementById('pass1')
 	const password2 = document.getElementById('pass2')
 
-	let randomPassword1 = ""
-	for (let i = 0; i < 15; i++) {
-		let randomElement = characters[Math.floor(Math.random() * characters.length)];
+	let randomPassword1 = "" // random password is empty string
+	for (let i = 0; i < 15; i++) { // for each value less than 16
+		let randomElement = characters[Math.floor(Math.random() * characters.length)]; // 
   		randomPassword1 += randomElement;
 	}
-	password1.innerHTML = randomPassword1
+	console.log(randomPassword1)
+	let password1Text = randomPassword1.toString()
+	password1.innerHTML = password1Text
 
 
 	let randomPassword2 = ""
@@ -24,7 +25,9 @@ function generatePassword() {
 		let randomElement = characters[Math.floor(Math.random() * characters.length)];
 		randomPassword2 += randomElement;
 	}
-	password2.innerHTML = randomPassword2
+	console.log(randomPassword2)
+	let password2Text = randomPassword2.toString()
+	password2.innerHTML = password2Text
 }
 
 

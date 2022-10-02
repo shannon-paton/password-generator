@@ -6,16 +6,25 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 // each password should be 15 characters long
 
 
-
 function generatePassword() {
 
-	let password1 = []
+	const password1 = document.getElementById('pass1')
+	const password2 = document.getElementById('pass2')
 
-
-	const randomElement = characters[Math.floor(Math.random() * characters.length)];
+	let randomElement = characters[Math.floor(Math.random() * characters.length)];
 	console.log(randomElement)
 
 	// get 16 random characters and add to array
+
+	let randomPassword1 = ""
+	randomPassword1 += "test1"
+	password1.innerHTML = randomPassword1
+
+	let randomPassword2 = ""
+	randomPassword2 += "test2"
+	password2.innerHTML = randomPassword2
+
+
 
 	// turn array into a string, and return within the field
 

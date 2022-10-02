@@ -16,16 +16,18 @@
 
 		<p>Never use an insecure password again.</p>
 
-		<button onclick="generatePassword()">Generate passwords</button>
+		<button id="generate-passwords-button" onclick="generatePassword()">Generate passwords</button>
 
 		<hr>
 
 		<div class="passwords-container">
 			<div class="password-field">
 				<h4 id="pass1"></h4>
+				<button class="copy-button">COPY</button>
 			</div>
 			<div class="password-field">
-			<h4 id="pass2"></h4>
+				<h4 id="pass2"></h4>
+				<button class="copy-button">COPY</button>
 			</div>
 		</div>
 

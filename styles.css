@@ -29,7 +29,19 @@ p {
 	margin-top: 15px;
 }
 
-button {
+#generate-passwords-button {
+	color: #fff;
+	background-color: #10B981;
+	border: none;
+	border-radius: 6px;
+	padding:  10px 15px 10px 15px;
+	font-size: 16px;
+	font-weight: 400;
+	margin-top: 50px;
+	cursor: pointer;
+}
+
+.copy-button {
 	color: #fff;
 	background-color: #10B981;
 	border: none;

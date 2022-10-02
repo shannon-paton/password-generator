@@ -27,8 +27,8 @@ function generatePassword() {
 const copyButton1 = document.getElementById('copy-button-1')
 const copyButton2 = document.getElementById('copy-button-2')
 
-function copyPassword() {
-	var copyText = password[i].innerText
+function copyPassword(password) {
+	var copyText = password.innerText
 	console.log(copyText)
 
 	// https://www.w3schools.com/howto/howto_js_copy_clipboard.asp

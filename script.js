@@ -11,32 +11,20 @@ function generatePassword() {
 	const password1 = document.getElementById('pass1')
 	const password2 = document.getElementById('pass2')
 
-	let randomElement = characters[Math.floor(Math.random() * characters.length)];
-	console.log(randomElement)
-
-	// get 16 random characters and add to array
-
 	let randomPassword1 = ""
-	randomPassword1 += "test1"
+	for (let i = 0; i < 16; i++) {
+		let randomElement = characters[Math.floor(Math.random() * characters.length)];
+  		randomPassword1 += randomElement;
+	}
 	password1.innerHTML = randomPassword1
 
+
 	let randomPassword2 = ""
-	randomPassword2 += "test2"
+	for (let i=0; i < 16; i++) {
+		let randomElement = characters[Math.floor(Math.random() * characters.length)];
+		randomPassword2 += randomElement;
+	}
 	password2.innerHTML = randomPassword2
-
-
-
-	// turn array into a string, and return within the field
-
-
-	// button clicked
-
-	// generate random string of 16 characters
-
-	// for both field 1 and field 2
-
-
-
 }
 
 

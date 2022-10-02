@@ -4,11 +4,10 @@ const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O"
 // generate two random passwords when user clicks the button
 // each password should be 15 characters long
 
+const password1 = document.getElementById('pass1')
+const password2 = document.getElementById('pass2')
 
 function generatePassword() {
-
-	const password1 = document.getElementById('pass1')
-	const password2 = document.getElementById('pass2')
 
 	let randomPassword1 = "" // random password is empty string
 	for (let i = 0; i < 15; i++) { // for each value less than 16
@@ -29,9 +28,8 @@ function copyPassword() {
 	const copyButton1 = document.getElementById('copy-button-1')
 	const copyButton2 = document.getElementById('copy-button-2')
 
-
-
-
+	var copyText = password1.innerText
+	console.log(copyText)
 
 }
 

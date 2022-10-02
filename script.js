@@ -24,12 +24,14 @@ function generatePassword() {
 	password2.innerText = randomPassword2.toString()
 }
 
-function copyPassword() {
-	const copyButton1 = document.getElementById('copy-button-1')
-	const copyButton2 = document.getElementById('copy-button-2')
+const copyButton1 = document.getElementById('copy-button-1')
+const copyButton2 = document.getElementById('copy-button-2')
 
-	var copyText = password1.innerText
+function copyPassword() {
+	var copyText = password[i].innerText
 	console.log(copyText)
+
+	// https://www.w3schools.com/howto/howto_js_copy_clipboard.asp
 
 }
 

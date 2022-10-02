@@ -16,9 +16,7 @@ function generatePassword() {
   		randomPassword1 += randomElement;
 	}
 	console.log(randomPassword1)
-	let password1Text = randomPassword1.toString()
-	password1.innerHTML = password1Text
-
+	password1.innerHTML = randomPassword1
 
 	let randomPassword2 = ""
 	for (let i=0; i < 15; i++) {
@@ -26,8 +24,7 @@ function generatePassword() {
 		randomPassword2 += randomElement;
 	}
 	console.log(randomPassword2)
-	let password2Text = randomPassword2.toString()
-	password2.innerHTML = password2Text
+	password2.innerHTML = randomPassword2.toString()
 }
 
 
